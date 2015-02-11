@@ -7,9 +7,11 @@ function print(message) {
 var question;
 var answer;
 var response;
-var correctAnswer = 0;
+var correct = 0;
 var inCorrect = 0;
 var HTML;
+var rightAnswers = [];
+var wrongAnswers = [];
 
 var questions = [
 		["What's Batman's real identity?", "bruce wayne"],
@@ -25,9 +27,19 @@ for (var i = 0; i < questions.length; i += 1) {
 	response = prompt(question);
 
 	if (response.toLowerCase() === answer) {
-		correctAnswer += 1;
+		correct += 1;
+		rightAnswers.push(question);
+
+
+	} else {
+		inCorrect += 1;
+		wrongAnswers.push(question);
+
 	}
 }
 
-print("<p> You have " + correctAnswer + " question(s) correct.");
+
+
+print("<p> You have " + correct + " question(s) correct.");
+
 // if (correctAnswer === questions.length) {
