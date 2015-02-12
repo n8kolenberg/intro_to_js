@@ -1,0 +1,62 @@
+body {
+	background: url('img/tree_bark/tree_bark.png');
+	margin: auto;
+	width: 90%;
+}
+
+
+
+h1,h2,p,ul,li {
+	text-align: left;
+	color: grey;
+	max-width: 100%;
+	margin: 20px 10px 10px 20px;
+	font-family: Lato, Sans-serif;
+}
+
+/* For the coloured balls project in JS
+========================================
+div {
+	border-radius: 50%;
+	border: 2px solid #F9CDB1;
+	text-align: center;
+	background-color: #FEF3C6;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	padding-top: 12px;
+	margin: 5px;
+	box-sizing: border-box;
+	-webkit-transition-duration: 0.1s;
+}
+*/
+
+#output {
+	text-align: left;
+	color: grey;
+	margin: auto;
+	max-width: 100%;
+	margin: 20px 10px 10px 20px;
+	font-family: Lato, Sans-serif;
+	font-weight: 400;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+
+/*div:hover {
+	-webkit-transform: scale(2);
+	background: #F2F2F2;
+	box-shadow: 2px 2px 20px lightgrey;
+	margin: auto;
+}*/
+
+ 
+/*  padding-top: 12px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  margin: 5px;
+  background-color: rgb(230,230,230);*/
