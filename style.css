@@ -6,7 +6,9 @@ body {
 
 
 
+
 h1,h2,p,ul,li {
+
 	text-align: left;
 	color: grey;
 	max-width: 100%;

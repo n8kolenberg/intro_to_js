@@ -17,7 +17,9 @@ var questions = [
 		["What's Batman's real identity?", "bruce wayne"],
 		["What's Batman's butler's name?", "alfred"],
 		["Who played Batman in the Tim Burton movies?", "michael keaton"],
+
 		["What was the name of Christopher Nolan's first Batman movie?", "batman begins"]
+
 ];
 
 for (var i = 0; i < questions.length; i += 1) {
