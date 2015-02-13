@@ -13,6 +13,7 @@ var HTML;
 var rightAnswers = [];
 var wrongAnswers = [];
 
+
 var questions = [
 		["What's Batman's real identity?", "bruce wayne"],
 		["What's Batman's butler's name?", "alfred"],
@@ -38,14 +39,20 @@ for (var i = 0; i < questions.length; i += 1) {
 
 }
 
-document.write("<p>You've got correct: </p>");
-for (var j = 0; j < rightAnswers.length; j+=1) {
-	document.write("<ul> <li>" + rightAnswers[j] + "</li></ul>");
+
+function buildList(arr) {
+	var listHTML = "<ol>";
+	for (var i = 0; i < arr.length; i += 1) {
+		listHTML+= "<li>" + arr[i] + "</li>";
+	}
+  listHTML += "</ol>";
+  return listHTML;
 }
 
+HTML = "<p> You've got the following questions right: </p>";
+HTML += buildList(rightAnswers);
+HTML += "<p> You've got the following questions wrong: </p>";
+HTML += buildList(wrongAnswers);
 
-document.write("<p>You've got wrong: </p>");
-for (var j = 0; j < wrongAnswers.length; j+=1) {
-	document.write("<ul> <li>" + wrongAnswers[j] + "</li></ul>");
-}
+print(HTML);
 
